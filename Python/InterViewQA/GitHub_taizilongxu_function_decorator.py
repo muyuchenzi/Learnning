@@ -35,7 +35,7 @@ def decorator_args_time(func):
     time.sleep(3)
 
     def wrapper(*args):
-        print(f"this is happend {time.time()}")
+        print(f"this is happened {time.time()}")
         res = func(*args)
         return res
 
@@ -51,5 +51,5 @@ def foo_args(a, b, c):
 
 
 if __name__ == '__main__':
-    # foo_no_args()
+    foo_no_args()
     result = foo_args(1, 2, 3)

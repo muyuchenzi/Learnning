@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ul.one>li:first-child {
+            color: firebrick;
+        } */
+        .one>li {
+            color: fuchsia;
+        }
+
+        .one>ul>li {
+            color: royalblue;
+        }
+
+        .one>ul>ul>li {
+            color: green;
+        }
+
+        .sitenav a {
+            color: brown;
+        }
+
+        .test a {
+            text-decoration: none;
+            color: chocolate;
+        }
+
+        ul>li:last-child>ul {
+            background-color: cornflowerblue;
+            margin: 2px;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="test">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">简介</a></li>
+            <li><a href="#">帮助</a></li>
+            <li>
+                <a href="#">联系</a>
+                <ul>
+                    <li>邮箱</li>
+                    <li>电话</li>
+                    <li>串门</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="sitenav">
+        <div class="site-t">左边导航栏</div>
+        <div class="site-t"><a href="#">登陆</a></div>
+    </div>
+
+
+
+    <div class="container">
+        <ul class="one">
+            <li class="Level1">一级菜单 </li>
+            <ul class="two">
+                <li>二级菜单</li>
+                <ul class="three">
+                    <li>三级菜单</li>
+                    <li>三级菜单</li>
+                    <li>三级菜单</li>
+                </ul>
+            </ul>
+            <li class="Level1">一级菜单</li>
+            <ul class="two">
+                <li>二级菜单
+
+                </li>
+                <ul class="three">
+                    <li>三级菜单</li>
+                    <li>三级菜单</li>
+                    <li>三级菜单</li>
+                </ul>
+            </ul>
+            <li class="Level1">一级菜单</li>
+            <ul class="two">
+                <li>二级菜单</li>
+                <ul class="three">
+                    <li>三级菜单</li>
+                    <li>三级菜单</li>
+                    <li>三级菜单</li>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

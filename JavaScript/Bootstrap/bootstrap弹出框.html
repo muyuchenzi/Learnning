@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./package/bootstrap.min.css">
+    <script src="./package/bootstrap.min.js"></script>
+    <script src="./package/jquery-3.4.1.js"></script>
+    <title>模态框</title>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" id="temp">
+        Launch modal table
+    </button>
+    <div id="modalTable" style="display: none;" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal table</h5>
+                    <button type="button" class="close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>请准确输入</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="closeDialog">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveDialog">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $("#temp").on('click', function () {
+        $("#modalTable").show()
+    })
+    $("#closeDialog,#saveDialog").on("click", function () {
+        $("#modalTable").hide()
+    })
+</script>
+
+</html>

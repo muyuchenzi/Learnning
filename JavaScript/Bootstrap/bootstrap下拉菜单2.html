@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./package/bootstrap.min.css">
+    <script src="./package/bootstrap.min.js"></script>
+    <script src="./package/jquery-3.4.1.js"></script>
+    <script src="./package/bootstrap.bundle.min.js"></script>
+    <style>
+        button,
+        li {
+            width: 200px;
+        }
+
+        li:hover {
+            color: floralwhite;
+            background-color: slategrey;
+        }
+    </style>
+    <title>下拉菜单2</title>
+</head>
+
+<body>
+    <div>
+        <button type="button" class="btn btn-primary" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li class="list-group-item" href="#">one</li>
+            <li class="list-group-item" href="#">one</li>
+            <li class="list-group-item" href="#">one</li>
+            <li class="list-group-item" href="#">one</li>
+            <li class="list-group-item" href="#">one</li>
+            <li class="list-group-item" href="#">one</li>
+        </ul>
+    </div>
+    <script>
+        $(".list-group-item").click(function () {
+            console.log(this)
+        })
+    </script>
+
+
+</body>
+
+</html>

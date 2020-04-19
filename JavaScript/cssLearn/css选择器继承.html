@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .container{
+            background-color: #cccccc;
+            height: 800px;
+            width: 800px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+    </div>
+
+    <div class="test">
+        css选择器的优先级 同级就近原则 css的特殊性--》【0,0,0,0】
+        <div>
+            1、标签选择器-->(0,0,0,1)
+        </div>
+        <div>
+            2、类选择器（伪类选择器）-->(0,0,1,0)
+        </div>
+        <div>
+            3、id选择器-->(0,1,0,0)
+        </div>
+        <div>
+            4、行内样式-->(1,0,0,0)
+        </div>
+        <div>
+            5、!important-->无穷大---》优先执行
+        </div>
+    </div>
+</body>
+
+</html>

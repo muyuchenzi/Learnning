@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lng="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p::first-letter {
+            font-size: x-large;
+        }
+
+        p::first-line {
+            color: lawngreen;
+        }
+
+        p::selection {
+            color: red;
+        }
+
+        .container::before {
+            content: "我想";
+        }
+
+        .container::after {
+            content: "jieshu";
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>双冒号选择器</h2>
+    <div>
+        <p> 选择每个 <p> 元素的首行。 1
+                :first-child p:first-child 选择属于父元素的第一个子元素的每个 元素。 2
+                :before :before 在每个 元素的内容之前插入内容。 2
+                :after :after 在每个 元素的内容之后插入内容。 2
+                :lang(language) :lang(it) 选择带有以 "it" 开头的 lang 属性值的每个 元素。 2
+                element1~element2 选择前面有 元素的每个 > 元素。 3
+                [attribute^=value] a[src^="htts"] 选择其 src 属性值以 "htts" 开头的每个 元素。 3
+                [ttribute$=vlue] [src$=".df"] 选择其 src 属性以 ".df" 结尾的所有 元素。 3
+                [ttribute*=vlue] [src*="bc"] 选择其 src 属性中包含 "bc" 子串的每个 元素。 3
+                :first-of-tye :first-of-tye 选择属于其父元素的首个 元素的每个 元素。 3
+                :lst-of-tye :lst-of-tye 选择属于其父元素的最后 元素的每个 元素。 3
+                :only-of-tye :only-of-tye 选择属于其父元素唯
+    </div>
+    <div class="container">
+        这是一个测试
+    </div>
+</body>
+
+</html>

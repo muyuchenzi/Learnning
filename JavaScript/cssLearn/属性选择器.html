@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a[title]{
+            color: crimson;
+        }
+        a[class='search']{
+            color: green;
+        }
+        a[class*='f']{
+            color: goldenrod;
+        }
+        a[title^='x']{
+            color: greenyellow;
+        }
+        a[title$="y"]{
+            color: hotpink;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <a href="#" class="search">baidu</a>
+            <a href="#" class="search">sina</a>
+            <a href="#" class="search">google</a>
+        </div>
+        <div>
+            <a href="#" class="fun">zhihu</a>
+            <a href="#" class="fun">hupu</a>
+            <a href="#" class="fun">mdt</a>
+        </div>
+        <div>
+            <a href="#" title="ss">one</a>
+            <a href="#" title="ss">one</a>
+            <a href="#" title="ss">one</a>
+            <a href="#" title="ss">one</a>
+        </div>
+        <div>
+            <a href="#" title="xss">one</a>
+            <a href="#" title="xss">one</a>
+            <a href="#" title="xss">one</a>
+            <a href="#" title="xss">one</a>
+        </div>
+        <div>
+            <a href="#" title="xssy">fiv</a>
+            <a href="#" title="xssy">five</a>
+            <a href="#" title="xssy">five</a>
+            <a href="#" title="xss">one</a>
+        </div>
+    </div>
+</body>
+
+</html>

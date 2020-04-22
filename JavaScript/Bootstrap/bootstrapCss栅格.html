@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./package/bootstrap.min.css">
+    <script src="./package/bootstrap.min.js"></script>
+    <script src="./package/jquery-3.4.1.js"></script>
+    <style>
+        .row {
+            margin-bottom: 20px;
+        }
+
+        .row.row {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .col-md-1 {
+            padding: 15px;
+            padding-bottom: 15px;
+            background-color: #eee;
+            background-color: rgba(86, 61, 124, 0.2);
+            border: 1px solid #dddddd;
+            border: 1px solid rgba(86, 61, 124, 0.2);
+
+        }
+
+        [class*="col-"] {
+            padding: 15px;
+            padding-bottom: 15px;
+            background-color: #eee;
+            background-color: rgba(86, 61, 124, 0.2);
+            border: 1px solid #dddddd;
+            border: 1px solid rgba(86, 61, 124, 0.2);
+
+        }
+    </style>
+    <title>CSS栅格</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+        
+        <div class="">
+            <div class="row">
+                <div class="col-md-3">col-md-3</div>
+                <div class="col-md-3">col-md-3</div>
+                <div class="col-md-3">col-md-3col-md-3col-md-33col-md-3col-md-3col-md</div>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <!--  偏移-->
+            <div class="col-md-4 col-md-offset-4">fdfjdjaf</div>
+        </div>
+        <!-- div的嵌套 -->
+        <div class="row">
+            <div class="col-sm-9">
+                one
+                <div class="row">
+                    <div class="col-xs-8">
+                        first
+
+                    </div>
+                    <div class="col-xs-4">
+                        two
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-lg-push-3">9999</div>
+            <div class="col-md-3 col-md-pull-9">3333</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

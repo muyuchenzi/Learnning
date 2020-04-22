@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./package/bootstrap.min.css">
+    <script src="./package/bootstrap.min.css"></script>
+    <script src="./package/jquery-3.4.1.js"></script>
+    <title>内联对齐</title>
+    <style>
+        .container{
+            overflow: hidden;
+        }
+        [class*='col']{
+            display:inline-flex;
+            width: 100%;
+            overflow: auto;
+            white-space: pre-line;
+            padding: 15px;
+            padding-bottom: 15px;
+            background-color: #eee;
+            background-color: rgba(86, 61, 124, 0.2);
+            border: 1px solid #dddddd;
+            border: 1px solid rgba(86, 61, 124, 0.2);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="col-md-10">test</div>
+            <div class="col-md-2" >
+                <p>teststatteststattestst
+    atteststatteststattatteststatteststatt
+                    eststat</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

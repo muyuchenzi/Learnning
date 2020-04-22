@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: burlywood;
+            border: 1px solid black;
+        }
+        .top{
+            width: 100%;
+            height: 100px;
+            background-color: cadetblue;
+            padding: 1px;
+            display: inline-table;
+        }
+        .one,.three{
+            width: 100px;
+            height: inherit;
+            background-color: violet;
+            margin-left: 80px;
+            border:1px solid transparent;
+            display: inline-table;
+            border-collapse: collapse;
+            text-align: center;
+            line-height: 100px;
+        }
+        .two{
+            width: 100%;
+            height: 100px;
+            background-color: lightcoral;
+            text-align: center;
+            line-height: 100px;
+        }
+        .down>div{
+            width: 100px;
+            height: 100px;
+            background-color: lightslategray;
+            display: inline-table;
+            margin-top: 40px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .four{
+            margin-left: 20px;
+        }
+        .five{
+            margin-left: 20px;
+        }
+        .six{
+            margin-left: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="one">
+                测试一
+            </div>
+            <div class="three">
+                测试二
+            </div>
+        </div>
+        <div class="two">
+            <div class="innner">测试三</div>
+        </div>
+        <div class="down">
+            <div class="four">
+                测试四
+            </div>
+            <div class="five">
+                测试五
+            </div>
+            <div class="six">
+                测试六
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

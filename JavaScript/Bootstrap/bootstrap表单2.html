@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./package/bootstrap.min.css">
+    <script src="./package/bootstrap.min.js"></script>
+    <script src="./package/jquery-3.4.1.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <style>
+        #it{
+            font-style: italic;
+        }
+    </style>
+    
+    <title>表单2</title>
+</head>
+
+<body>
+
+    <form role="form">
+        <!-- 输入框 -->
+        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+        <!-- 复选 -->
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="optionCheckbox" id="">看代码
+            </label>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="optionCheckbox" id="">读书
+                </label>
+            </div>
+
+
+            <!-- 单选 -->
+            <div class="radio">
+                <label>
+                    <input  type="radio" name="optionRadios" id="">男
+                </label>
+            </div>
+            <div class="radio"> 
+                <label>
+                    <input type="radio" name="optionRadios" id="">女
+                </label>
+            </div>
+            <!-- 下拉框 -->
+            <div class="col-sm-6">
+                <select name="sss" id="" class="form-control">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <p class="form-control-static">请按照我的格式进行输入1243@124.com</p>
+            </div>
+            <!-- 禁止输入 -->
+            <div class="col-md-2">
+                <input type="text" class="form-control" placeholder="请输入" disabled>
+            </div>
+    </form>
+    <div class="col-md-12">
+        <form role="form">
+            <div class="form-group ">
+                <label class="col-md-4">用户名
+                    <input type="text" class="form-control" name="" id="">
+                </label>
+                <label class="col-md-4">用户名
+                    <input type="text" class="form-control" name="" id="">
+                </label>
+                <label class="col-md-4 has-success has-feedback" >用户名
+                    <input type="text" class="form-control" name="" id="">
+                    <span class="glyphicon glyphicon-italic form-control-feedback"></span>
+                </label>
+            </div>
+            <div class="form-group has-error">
+                <label >用户名
+                    <input type="text" class="form-control" name="" id="">
+                </label>
+            </div>
+            <div class="form-group has-warning has-feedback">
+                <label >用户名
+                    <input type="text" class="form-control" name="" id="it" placeholder="请输入与用户">
+                    <span class="glyphicon glyphicon-italic form-control-feedback" ></span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+</html>

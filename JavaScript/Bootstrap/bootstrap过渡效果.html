@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./package/bootstrap.min.css">
+    <script src="./package/bootstrap.min.js"></script>
+    <script src="./package/jquery-3.4.1.js"></script>
+    <style>
+        #mydiv{
+            background: sienna;
+            height: 100px;
+            width: 100px;
+            -webkit-transition: width 2s;
+            transition: 2s;
+        }
+        #mydiv:hover{
+            width: 400px;
+
+        }
+    </style>
+    <title>过渡效果</title>
+</head>
+<body>
+    <div id="mydiv">
+
+    </div>
+</body>
+
+<script>
+    document.getElementById("mydiv").addEventListener("transitionend",function(e){
+        this.innerHTML="过渡事件触发--过渡已完成"
+    })
+</script>
+</html>

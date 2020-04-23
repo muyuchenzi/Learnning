@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 2fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+        .head{
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns:repeat(6,1fr);
+        }
+        .headLeft{
+            background: cadetblue;
+            grid-area: 1/1/2/1;
+        }
+        .headRight{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-area: 1/5/1/7
+        }
+        .headRight>div{
+            width: 150px;
+            background-color: darkcyan;
+            justify-self: right;
+            
+        }
+        .body {
+            border: 1px solid green;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+        }
+        .left{
+            grid-area: 1/1/1/1;
+            background-color: darkmagenta;
+            justify-self: left;
+        }
+        .right{
+            grid-area: 1/2/1/3;
+            background-color: darkturquoise;
+        }
+        .foot {
+            border: 1px solid blue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="headLeft">1</div>
+            <div class="headRight">
+                <div class="headOne">首页</div>
+                <div class="headTwo">搜索</div>
+                <div class="headThree">帮助</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="left">1</div>
+            <div class="right">2</div>
+        </div>
+        <div class="foot">
+            <address>
+                有，有些公司，虽然领导嘴上不强迫，也没有章程规定要加班。但实际上，公司已经形成了所谓的加班“文化”。到了下班时间，有事没事，大家宁愿发
+                呆、磨洋工，就是谁也不敢离开。否则，你就为成为“态度”有问题的人。所以说，对求职者来说，对是否加班，一定不要看怎么说，甚至是怎么写，一定
+                要“眼见为实”。而通过下面的方法，就一定能筛选出真正不加班的公司。选择一个工作日（以我的经验，最好是星期二），8点半之后，亲自来到该公司
+                ，然后仔细观察该公司的情况。如果灯火通明，不断的有人员出入，那就说明该公司存在较严重的加班，反之则不。如果你担心有误判，那就选择两个工作
+                日，在8点半之后去两次。这个方法，被我身边的朋友实践过很多次，无论正例还是反例，都证明非常有效。例如，有个朋友按照这个方法，虽实地考察了某
+                公司，特推断出该公司加班严重的。同时，朋友也知道以他的家庭情况，对加班的接受程度很低。但依然心存侥幸，听信面试官的承诺，觉得自己入职的团队
+                ，自己应聘的职位和别人不一样，可以不加班，所以就果然接受了offer，入了职。
+            </address>
+        </div>
+    </div>
+</body>
+
+</html>

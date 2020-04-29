@@ -13,8 +13,6 @@ function getName() {
     return privateName;
   };
 }
-
-
 var getPrivate = getName("Hello"); //当然传参是局部变量，但函数里面我没有接受这个参数
 
 console.log(name) //Oaoafly

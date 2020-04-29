@@ -1,0 +1,85 @@
+.container {
+    width: 600px;
+    height: 600px;
+    border: 5px solid skyblue;
+    display: grid;
+    /* 列的布局方式 */
+    /* grid-template-columns: auto; */
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: repeat(auto-fill,100px); */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 1fr minmax(300px,2fr);最小值 否则 */
+    /* 定位线 */
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    /* 元素间距 */
+    gap: 10px;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    /* areas 区域*/
+    grid-template-areas: 'a b c''a b c''x y z';
+    /* grid-auto-flow: row; */
+    /* 排版方向 */
+    grid-auto-flow: row;
+    /* 行对其 列对齐 注意定义一下宽度 */
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+    /* 内容对齐方式 */
+    /* align-content: center; */
+    /* justify-content: center; */
+}
+
+.item {
+    font-size: 32px;
+    text-align: center;
+    /* line-height: 100px; */
+    border: 1px solid black;
+}
+
+.item1 {
+    background-color: slateblue;
+
+    /* 横纵向跨越 */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1/2;
+    /* grid-column-start: span 5; */
+    justify-self: left;
+}
+
+.item2 {
+    background-color: goldenrod;
+}
+
+.item3 {
+    background-color: green;
+}
+
+.item4 {
+    background-color: rosybrown;
+}
+
+.item5 {
+    background-color: blueviolet;
+}
+
+.item6 {
+    background-color: rgb(33, 204, 153);
+}
+
+.item7 {
+    background-color: rgb(196, 57, 154);
+}
+
+.item8 {
+    background-color: rgb(158, 136, 89);
+}
+
+.item9 {
+    background-color: rgb(10, 96, 136);
+}
+
+.item10 {
+    background-color: rgb(2, 30, 122);
+}

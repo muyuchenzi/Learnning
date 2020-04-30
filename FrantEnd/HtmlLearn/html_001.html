@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img{
+            width: 200px;
+        }
+    </style>
+    <title>haizlin_001</title>
+</head>
+<body>
+    <!-- img 标签图片加载失败 -->
+    <img src="img/飞机场.jpg" alt="Error" onerror="onerrorFunc()">
+
+
+
+
+    <script>
+        function onerrorFunc(){
+            alert('this is not load')
+            this.src='img/001.png'
+        }
+    </script>
+</body>
+</html>

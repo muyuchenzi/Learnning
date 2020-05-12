@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Demo 001</title>
+    <script src="../React_always/jquery-3.4.1.min.js"></script>
+    <style>
+        /* .test{
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <label class="test">计数</label><br>
+    <button type="button" id="like">点赞</button>
+
+    <script>
+        let clikcNumber=0;
+        $("#like").click(function(){
+            $(".test").css("color","red")
+            clikcNumber++;
+            $(".test").text(`计数：${clikcNumber}`)
+        })
+
+    </script>
+
+
+</body>
+</html>

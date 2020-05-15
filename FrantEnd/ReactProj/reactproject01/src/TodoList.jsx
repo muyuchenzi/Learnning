@@ -14,7 +14,6 @@ class Mytodolist extends React.Component {
   handleInputChange(e) {
     this.setState({
       inputValue: e.target.value,
-      // list: ["Python", "JavaScript"],
     });
   }
   handleBtnClick() {
@@ -51,12 +50,8 @@ class Mytodolist extends React.Component {
         <ul>
           {this.state.list.map((item, index) => {
             return (
-              <TodoItem content={item} index={index}/>
-              // <li
-              //   key={index}
-              //   onClick={this.handItemDel.bind(this, index)}
-              //   dangerouslySetInnerHTML={{ __html: item }}
-              // ></li>
+              <TodoItem content={item} index={index}
+              handleDelete1={this.handItemDel.bind(this)}/>
             );
           })}
         </ul>

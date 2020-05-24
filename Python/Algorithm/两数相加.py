@@ -17,16 +17,19 @@ class ListNode(object):
 
 
 class Solution(object):
-    def __init__(self, list_var1=[3, 4, 6], list_var2=[4, 7, 4]):
+    def __init__(self, list_var1=[3, 4, 6, 7], list_var2=[8, 4, 7, 4]):
         self.list_var1 = list_var1
         self.list_var2 = list_var2
 
     def listToNode(self, list_var: list):
-        list_head, *list_tail = list_var
-        list_node_tail = ListNode(list_head)
+        temp_1 = list_var.pop()
+        print(temp_1)
+        list_node_tail = ListNode(temp_1)
         while list_var:
-            list_node_tail.next = ListNode(list_var.pop())
-            print(list_node_tail.next)
+            print(list_var)
+            temp_2 = list_var.pop()
+            print(temp_2)
+            list_node_tail.next = ListNode(temp_2)
         return list_node_tail
 
     def convert(self):
@@ -43,4 +46,3 @@ class Solution(object):
 if __name__ == '__main__':
     answer = Solution()
     l1, l2 = answer.convert()
-
